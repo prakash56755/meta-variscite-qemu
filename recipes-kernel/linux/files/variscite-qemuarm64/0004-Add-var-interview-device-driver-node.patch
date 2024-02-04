@@ -1,0 +1,28 @@
+From 33502658ecd9703791427e07a8d2882eaf866d08 Mon Sep 17 00:00:00 2001
+From: Pitchaiah Prakash <prakash56755@gmail.com>
+Date: Sun, 4 Feb 2024 23:12:07 +0100
+Subject: [PATCH] Add var-interview-device driver node
+
+---
+ arch/arm64/boot/dts/variscite/var-qemu-arm64.dts | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/arch/arm64/boot/dts/variscite/var-qemu-arm64.dts b/arch/arm64/boot/dts/variscite/var-qemu-arm64.dts
+index 2a9d685c0e11..42f11f17896d 100644
+--- a/arch/arm64/boot/dts/variscite/var-qemu-arm64.dts
++++ b/arch/arm64/boot/dts/variscite/var-qemu-arm64.dts
+@@ -269,6 +269,11 @@ poweroff {
+ 		};
+ 	};
+ 
++	var-interview-device {
++		compatible = "interview,challenge";
++		interview-name = "Variscite Demo";
++	};
++
+ 	pl061@9030000 {
+ 		phandle = <0x8007>;
+ 		clock-names = "apb_pclk";
+-- 
+2.34.1
+

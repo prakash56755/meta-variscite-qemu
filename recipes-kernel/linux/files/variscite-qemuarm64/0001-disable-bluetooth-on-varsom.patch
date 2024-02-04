@@ -1,0 +1,13 @@
+diff --git a/arch/arm64/boot/dts/freescale/imx8mm-var-som.dtsi b/arch/arm64/boot/dts/freescale/imx8mm-var-som.dtsi
+index a0bd540f27d3..5ab7c6c71c31 100644
+--- a/arch/arm64/boot/dts/freescale/imx8mm-var-som.dtsi
++++ b/arch/arm64/boot/dts/freescale/imx8mm-var-som.dtsi
+@@ -273,7 +273,7 @@ &uart2 {
+ 	assigned-clocks = <&clk IMX8MM_CLK_UART2>;
+ 	assigned-clock-parents = <&clk IMX8MM_SYS_PLL1_80M>;
+ 	uart-has-rtscts;
+-	status = "okay";
++	status = "disabled";
+ };
+ 
+ /* Console */
